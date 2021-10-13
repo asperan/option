@@ -1,5 +1,5 @@
 module option_test;
-import option;
+import option.option;
 
 private class A {
   int c;
@@ -19,7 +19,13 @@ unittest {
 
 unittest {
   import std.exception : assertThrown;
-  assertThrown!Error(Option!A.some(null));
+  Option!int i = Option!int.none();
+  assertThrown!GetOnNoneError(i.get());
+}
+
+unittest {
+  import std.exception : assertThrown;
+  assertThrown!SomeOfNullError(Option!A.some(null));
 }
 
 unittest {
