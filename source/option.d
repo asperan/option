@@ -1,6 +1,6 @@
-module option.option;
+module asperan.option.option;
 
-public import option.errors;
+public import asperan.option.errors;
 
 /**
  * Option represents a value that may or may not exist.

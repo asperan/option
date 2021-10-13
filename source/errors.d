@@ -1,4 +1,4 @@
-module option.errors;
+module asperan.option.errors;
 
 /**
  * Error thrown when a null value is input to Option.some.

@@ -1,5 +1,5 @@
-module option_test;
-import option.option;
+module asperan.option_test;
+import asperan.option;
 
 private class A {
   int c;
