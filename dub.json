@@ -6,5 +6,15 @@
 	"description": "A simple library for optional values.",
 	"license": "MIT",
 	"name": "option",
-	"targetType": "library"
+	"targetType": "library",
+  "buildTypes": {
+    "docs": {
+      "dflags": [ "-c", "-Dddocs" ],
+      "buildOptions": [ "syntaxOnly" ]
+    },
+    "unittest": {
+      "sourcePaths": [ "test/" ],
+      "buildOptions": [ "unittests", "debugInfo", "debugMode" ],
+    }
+  }
 }
